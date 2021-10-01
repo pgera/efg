@@ -57,3 +57,11 @@ BFS results averaged over 100 traversals from random sources:
 | kron27_s (u)       | 63.07 M (4.22 B)  | 15.97             | 9.23              | 997 ms<br>4.27 GTEPS                   | 370 ms<br>11.43 GTEPS          |
 
 The last three graphs would not have fit in memory on the Titan Xp GPU without compression.
+
+## UVM
+Graphs that do not fit even after compression use UVM. Compression is still beneficial for reducing the data transferred over the interconnect. The following graphs use UVM on the Titan Xp GPU
+
+| Graph              | \|V\| (\|E\|)     | CSR Size<br>(GiB) | EFG Size<br>(GiB) | Performance<br>Titan Xp (12 GiB Mem) | Performance<br>V100 (32 GiB Mem) |
+|--------------------|-------------------|-------------------|-------------------|--------------------------------------|----------------------------------|
+| molr16 (u)         | 30.22 M (6.68 B)  | 25.1              | 14.5              | 2148 ms (UVM)<br>3.07 GTEPS          | 296 ms<br>22.32 GTEPS          |
+| uk-75_s (u)       | 105.22 M (6.62 B) | 25.47             | 15.43             | 2825 ms (UVM)<br>2.34 GTEPS           | 284 ms<br>23.25 GTEPS          |
