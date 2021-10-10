@@ -65,3 +65,6 @@ Graphs that do not fit even after compression use UVM. Compression is still bene
 |--------------------|-------------------|-------------------|-------------------|--------------------------------------|----------------------------------|
 | molr16 (u)         | 30.22 M (6.68 B)  | 25.1              | 14.5              | 2148 ms (UVM)<br>3.07 GTEPS          | 296 ms<br>22.32 GTEPS          |
 | uk-75_s (u)       | 105.22 M (6.62 B) | 25.47             | 15.43             | 2825 ms (UVM)<br>2.34 GTEPS           | 284 ms<br>23.25 GTEPS          |
+
+## Documentation
+A paper for this work is in the pipeline. Meanwhile, you can refer to my [dissertation](https://smartech.gatech.edu/bitstream/handle/1853/64794/GERA-DISSERTATION-2021.pdf?sequence=1) for more details.
