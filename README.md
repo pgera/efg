@@ -4,7 +4,7 @@ This project provides an efficient implementation for traversing large compresse
 
 # Build Requirements
 
- - Ubuntu 18.04 or newer
+ - Ubuntu 20.04 (or newer)
  - [CUDA 11+](https://developer.nvidia.com/cuda-downloads)
  - [folly v2021.09.20.00](https://github.com/facebook/folly/releases/tag/v2021.09.20.00)
 
