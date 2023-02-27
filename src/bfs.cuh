@@ -1,6 +1,7 @@
 #pragma once
 #include <thrust/binary_search.h>
 #include <thrust/device_vector.h>
+#include <thrust/execution_policy.h>
 
 #include "bfs_kernels.cuh"
 #include "cu_ef_graph.cuh"
