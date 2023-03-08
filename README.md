@@ -67,4 +67,4 @@ Graphs that do not fit even after compression use UVM. Compression is still bene
 | uk-75_s (u)       | 105.22 M (6.62 B) | 25.47             | 15.43             | 2825 ms (UVM)<br>2.34 GTEPS           | 284 ms<br>23.25 GTEPS          |
 
 ## Documentation
-A paper for this work is in the pipeline. Meanwhile, you can refer to my [dissertation](https://smartech.gatech.edu/bitstream/handle/1853/64794/GERA-DISSERTATION-2021.pdf?sequence=1) for more details.
+Please refer to the [paper](https://github.com/pgera/efg/blob/main/gera-ipdps23.pdf) in the repository for more details.
