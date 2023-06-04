@@ -1,9 +1,9 @@
 CUDA_ROOT_DIR=/usr/local/cuda
-FOLLY_INSTALL_DIR=/data/pgera6/folly_21_install/installed/folly
-FMT_INSTALL_DIR=/data/pgera6/folly_21_install/installed/fmt-G3bu_g4dOjQI4nuoemyf3ObMUeBI7MU78OyJ38HQt-Y
-CXX = /usr/bin/clang++-10
+FOLLY_INSTALL_DIR=/data/pgera6/folly_23_install/installed/folly
+FMT_INSTALL_DIR=/data/pgera6/folly_23_install/installed/fmt-5d79UHBn4Hso1yL1LQBoyTVMWd1GqtqLE_u_Lyf2M5s
+CXX = /usr/bin/g++
 CXXFLAGS = --std=c++17 -O3 -fPIC -fopenmp -Wall -I$(FOLLY_INSTALL_DIR)/include
-LDFLAGS= -fopenmp=libiomp5 -L$(FOLLY_INSTALL_DIR)/lib -L$(FMT_INSTALL_DIR)/lib
+LDFLAGS= -fopenmp -L$(FOLLY_INSTALL_DIR)/lib -L$(FMT_INSTALL_DIR)/lib
 LDLIBS= -lstdc++fs -lglog -lfolly -ldouble-conversion -lboost_program_options -ldl -lfmt -lssl -lcrypto
 
 # NVCC compiler options:

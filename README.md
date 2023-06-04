@@ -4,15 +4,15 @@ This project provides an efficient implementation for traversing large compresse
 
 # Build Requirements
 
- - Ubuntu 20.04 (or newer)
- - [CUDA 11+](https://developer.nvidia.com/cuda-downloads)
- - [folly v2021.09.20.00](https://github.com/facebook/folly/releases/tag/v2021.09.20.00)
+ - Ubuntu 22.04
+ - [CUDA 12](https://developer.nvidia.com/cuda-downloads)
+ - [folly v2023.05.22.00](https://github.com/facebook/folly/releases/tag/v2023.05.22.00)
 
 
 ## Build
 
-- `sudo apt install clang-10 libboost-all-dev libssl-dev libgoogle-glog-dev libdouble-conversion-dev`
-- Download and extract the [folly tarball](https://github.com/facebook/folly/releases/tag/v2021.09.20.00). 
+- `sudo apt install g++ libboost-all-dev libssl-dev libgoogle-glog-dev libdouble-conversion-dev`
+- Download and extract the [folly tarball](https://github.com/facebook/folly/releases/tag/v2023.05.22.00). 
 - Build and install folly at a specific path by calling  `./build.sh --scratch-path <scrath_path>`
 - Clone this project. In the project's Makefile: 
     - Set `FOLLY_INSTALL_DIR` to <scratch_path\>/installed/folly

@@ -256,8 +256,6 @@ void BFS<kSkipQuantum, kForwardQuantum>::traverse_impl(
     thrust::fill(t_visited_bmap, t_visited_bmap + bitmap_size_, 0);
     t_visited_bmap[source / 8] = 1U << (source % 8);
 
-    thrust::device_ptr<const Degree> t_degree =
-        thrust::device_pointer_cast(static_cast<const Degree*>(d_degree_));
     thrust::device_ptr<const uint8_t> t_isolated_bmap =
         thrust::device_pointer_cast(d_isolated_bmap_);
 

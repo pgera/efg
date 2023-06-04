@@ -56,7 +56,7 @@ template <typename Value, typename SkipValue>
 size_t EFLayout<kSkipQuantum, kForwardQuantum>::get_nbr_list_size(
     uint64_t vid) const {
     using namespace folly::compression;
-    typedef EliasFanoEncoderV2<Value, SkipValue, kSkipQuantum, kForwardQuantum>
+    typedef EliasFanoEncoder<Value, SkipValue, kSkipQuantum, kForwardQuantum>
         Encoder;
 
     size_t c_size = 0;

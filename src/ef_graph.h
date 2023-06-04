@@ -126,7 +126,7 @@ void EFGraph<kSkipQuantum, kForwardQuantum>::encode_nbr_list(
     void* output,
     size_t max_size) {
     using namespace folly::compression;
-    typedef EliasFanoEncoderV2<Value, SkipValue, kSkipQuantum, kForwardQuantum>
+    typedef EliasFanoEncoder<Value, SkipValue, kSkipQuantum, kForwardQuantum>
         Encoder;
 
     auto it_pair = ef_layout_.csr_.get_nbrs(vid);
