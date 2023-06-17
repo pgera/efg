@@ -23,7 +23,7 @@ This project provides an efficient implementation for traversing large compresse
 - Clone this project. In the project's Makefile: 
     - Set `FOLLY_INSTALL_DIR` to <scratch_path\>/installed/folly
     - Set `FMT_INSTALL_DIR` to <scratch_path\>/installed/fmt-XXX, where XXX will be a string generated during the folly build process.
- -  (Optional): Add -arch=sm_XX to the NVCC flags in the Makefile for your GPU architecture for better performance.
+    - Add -arch=sm_XX to NVCC flags for your GPU architecture for better performance.
  - `make -j` 
 
 ## Input Graph Format
