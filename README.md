@@ -12,13 +12,13 @@ This project provides an efficient implementation for traversing large compresse
 ## Build
 
 - `sudo apt install g++ libboost-all-dev libssl-dev libgoogle-glog-dev libdouble-conversion-dev`
-- Build and install folly at <scratch_path>
+- Build and install folly at <scratch_path> (e.g., /tmp/folly_install) 
     ```
     git clone https://github.com/facebook/folly.git
     cd folly
     git checkout v2023.05.22.00
     sudo ./build/fbcode_builder/getdeps.py install-system-deps --recursive
-    python3 ./build/fbcode_builder/getdeps.py --allow-system-packages --scratch-path <scratch_path> build --no-tests
+    python3 ./build/fbcode_builder/getdeps.py --allow-system-packages --scratch-path /tmp/folly_install build --no-tests
     ```
 - Clone this project. In the project's Makefile: 
     - Set `FOLLY_INSTALL_DIR` to <scratch_path\>/installed/folly
