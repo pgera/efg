@@ -4,10 +4,12 @@ This project provides an efficient implementation for traversing large compresse
 
 # Build Requirements
 
+Validated on:
  - Ubuntu 22.04
  - [CUDA 12](https://developer.nvidia.com/cuda-downloads)
  - [folly v2023.05.22.00](https://github.com/facebook/folly/releases/tag/v2023.05.22.00)
-
+   
+Slightly newer or older versions should work as well. Please create an issue if you face issues during compilation.
 
 ## Build
 
