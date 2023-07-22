@@ -76,4 +76,14 @@ Graphs that do not fit even after compression use UVM. Compression is still bene
 | uk-75_s (u)       | 105.22 M (6.62 B) | 25.47             | 15.43             | 2825 ms (UVM)<br>2.34 GTEPS           | 284 ms<br>23.25 GTEPS          |
 
 ## Documentation
-Please refer to the IPDPS '23 [paper](https://p.gera.io/public/papers/gera-ipdps23.pdf) for more details.
+Please refer to the IPDPS '23 [paper](https://p.gera.io/public/papers/gera-ipdps23.pdf) for more details. If you find this useful, please cite it as:
+```
+@inproceedings{gera2023traversing,
+  title={Traversing Large Compressed Graphs on GPUs},
+  author={Gera, Prasun and Kim, Hyesoon},
+  booktitle={2023 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+  pages={25--35},
+  year={2023},
+  organization={IEEE}
+}
+```
